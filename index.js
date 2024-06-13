@@ -23,13 +23,13 @@ const validarGanador = () => {
 
         if (flag == false) {
             alert('jugador uno ganaste! (X)')
-           contador1++
-           pantalla1.value=contador1
-            
+            contador1++
+            pantalla1.value = contador1
+
         } else if (flag == true) {
             alert('jugador dos ganaste! (0)')
             contador2++
-            pantalla2.value=contador2
+            pantalla2.value = contador2
         }
         primerCaso()
     }
@@ -38,11 +38,11 @@ const validarGanador = () => {
         if (flag == false) {
             alert('jugador uno ganaste! (X)')
             contador1++
-            pantalla1.value=contador1
+            pantalla1.value = contador1
         } else if (flag == true) {
             alert('jugador dos ganaste! (0)')
             contador2++
-            pantalla2.value=contador2
+            pantalla2.value = contador2
         }
         segundoCaso()
 
@@ -52,11 +52,11 @@ const validarGanador = () => {
         if (flag == false) {
             alert('jugador uno ganaste! (X)')
             contador1++
-            pantalla1.value=contador1
+            pantalla1.value = contador1
         } else if (flag == true) {
             alert('jugador dos ganaste! (0)')
             contador2++
-            pantalla2.value=contador2
+            pantalla2.value = contador2
         }
         tercerCaso()
 
@@ -66,11 +66,11 @@ const validarGanador = () => {
         if (flag == false) {
             alert('jugador uno ganaste! (X)')
             contador1++
-            pantalla1.value=contador1
+            pantalla1.value = contador1
         } else if (flag == true) {
             alert('jugador dos ganaste! (0)')
             contador2++
-            pantalla2.value=contador2
+            pantalla2.value = contador2
         }
         cuartoCaso()
 
@@ -80,11 +80,11 @@ const validarGanador = () => {
         if (flag == false) {
             alert('jugador uno ganaste! (X)')
             contador1++
-            pantalla1.value=contador1
+            pantalla1.value = contador1
         } else if (flag == true) {
             alert('jugador dos ganaste! (0)')
             contador2++
-            pantalla2.value=contador2
+            pantalla2.value = contador2
         }
         quintoCaso()
     }
@@ -93,11 +93,11 @@ const validarGanador = () => {
         if (flag == false) {
             alert('jugador uno ganaste! (X)')
             contador1++
-            pantalla1.value=contador1
+            pantalla1.value = contador1
         } else if (flag == true) {
             alert('jugador dos ganaste! (0)')
             contador2++
-            pantalla2.value=contador2
+            pantalla2.value = contador2
         }
         sextoCaso()
 
@@ -106,11 +106,11 @@ const validarGanador = () => {
         if (flag == false) {
             alert('jugador uno ganaste! (X)')
             contador1++
-            pantalla1.value=contador1
+            pantalla1.value = contador1
         } else if (flag == true) {
             alert('jugador dos ganaste! (0)')
             contador2++
-            pantalla2.value=contador2
+            pantalla2.value = contador2
         }
         septimoCaso()
     }
@@ -119,14 +119,14 @@ const validarGanador = () => {
         if (flag == false) {
             alert('jugador uno ganaste! (X)')
             contador1++
-            pantalla1.value=contador1
+            pantalla1.value = contador1
         } else if (flag == true) {
             alert('jugador dos ganaste! (0)')
             contador2++
-            pantalla2.value=contador2
+            pantalla2.value = contador2
         }
         octavoCaso()
-    } 
+    }
     else {
         let filter = arreglo.filter((item) => item == null)
         if (filter.length == 0) {
@@ -184,10 +184,10 @@ const octavoCaso = () => {
 
 celdas.forEach((celda) => {
     btnReiniciar.addEventListener('click', () => {
-            celda.textContent = '';
-            arreglo = [null, null, null, null, null, null, null, null, null]
-            flag = true
-            celda.classList.remove('bg-danger')
+        celda.textContent = '';
+        arreglo = [null, null, null, null, null, null, null, null, null]
+        flag = true
+        celda.classList.remove('bg-danger')
     })
 
 })
@@ -226,8 +226,8 @@ celdas.forEach((celda) => {
 })
 
 puntajeReiniciar.addEventListener('click', () => {
-    contador1=0
-    contador2=0
-    pantalla1.value=''
-    pantalla2.value=''
-} )
+    contador1 = 0
+    contador2 = 0
+    pantalla1.value = ''
+    pantalla2.value = ''
+})
